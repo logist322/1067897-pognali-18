@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Andrey Khutornoy](https://up.htmlacademy.ru/adaptive/18/user/1067897).
-* Наставник: `Неизвестно`.
+* Наставник: [Кирилл Генералов](https://htmlacademy.ru/profile/hifull).
 
 ---
 
