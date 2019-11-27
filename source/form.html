@@ -52,9 +52,42 @@
     <h1 class="main__heading">Направления</h1>
 
     <section class="profile">
-      <div class="profile__level">
-
+      <h2>Профиль</h2>
+      <div class="profile__level level">
+        <p class="level__count">80</p>
+        <span>level</span>
       </div>
+      <div class="profile__avatar">
+        <img src="https://via.placeholder.com/100x100" width="100" height="100" alt="Фото">
+      </div>
+      <button class="profile__change">Сменить фото</button>
+      <h3 class="profile__tags-title">Тэги</h3>
+      <p class="profile__tags">#бургер #бар #футбол #концерт #крафт</p>
+      <h3 class="profile__transport-title">Транспорт</h3>
+      <ul class="profile__transport transport">
+        <li class="transport__plane--active"></li>
+        <li class="transport__bus--active"></li>
+        <li class="transport__bike"></li>
+        <li class="transport__walk--active"></li>
+      </ul>
+    </section>
+
+    <section class="plan">
+      <h2 class="plan__heading">Мои планы:</h2>
+      <ul class="list-style-reset plan__list">
+        <li class="plan__item card">
+          <h3 class="card__heading">Франция, Италия</h3>
+          <p class="card__companions">3 попутчика</p>
+          <p class="card__date">26 мар — 29 мар</p>
+          <a class="card__change" href="#">Изменить</a>
+        </li>
+        <li class="plan__item card">
+          <h3 class="card__heading">Таиланд, Индонезия</h3>
+          <p class="card__companions">1 попутчика</p>
+          <p class="card__date">1 июл — 15 июл</p>
+          <a class="card__change" href="#">Изменить</a>
+        </li>
+      </ul>
     </section>
 
   </main>
