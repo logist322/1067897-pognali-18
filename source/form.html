@@ -92,6 +92,56 @@
       </ul>
     </section>
 
+    <form class="add-plan" action="https://echo.htmlacademy.ru" method="GET">
+      <h2 class="add-plan__title">Добавить план:</h2>
+      <section class="add-plan__date step">
+        <h3 class="step__title">Шаг 1. Даты пребывания</h3>
+        <p class="step__subtitle">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее  предполагаемую длительность.</p>
+        <label class="step__label" for="companions">
+          <span class="step__main-label">Ищу попутчиков:</span>
+          <span class="step__grey-label">Чел.</span>
+        </label>
+        <input class="step__input" type="text" name="companions" id="companions">
+        <label class="step__label" for="duration">
+          <span class="step__main-label">Длительность:</span>
+          <span class="step__grey-label">Дн.</span>
+        </label>
+        <input class="step__input" type="text" name="duration" id="duration">
+        <div class="step__check-wrap">
+          <input class="step__kids-check" type="checkbox" name="kids" id="kids">
+          <label class="step__check-label" for="kids">Можно с детьми</label>
+        </div>
+        <div class="step__celcendar">
+
+        </div>
+        <button class="step__next" type="button">Следующий шаг</button>
+      </section>
+
+      <section class="add-plan__route step">
+        <h3 class="step__title">Шаг 2. Маршрут</h3>
+        <p class="step__subtitle">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
+        <select name="country">
+          <option value="Босния и Герцеговина">Босния и Герцеговина</option>
+          <option value="Чехия">Чехия</option>
+        </select>
+        <button class="step__add" type="button">Добавить страну</button>
+        <button class="step__next" type="button">Следующий шаг</button>
+        <button class="step__prev" type="button">На шаг назад</button>
+      </section>
+
+      <section class="add-plan__entertainment step">
+        <h3 class="step__title">Шаг 3. Развлечения</h3>
+        <p class="step__subtitle">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+        <label class="step__plan-label" for="bosnia_plan">Босния и Герцеговина</label>
+        <textarea class="step__plan-text" name="bosnia_plan" id="bosnia_plan" placeholder="План действий"></textarea>
+        <label class="step__plan-label" for="czech_plan">Чехия</label>
+        <textarea class="step__plan-text" name="chehia_plan" id="czech_plan" placeholder="План действий"></textarea>
+        <button class="step__send" type="submit">Отправить</button>
+        <button class="step__prev" type="button">На шаг назад</button>
+      </section>
+    </form>
+
+
   </main>
 
   <footer class="footer">
