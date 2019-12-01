@@ -9,15 +9,15 @@
       <a class="header__logo" href="index.html">
         <img src="https://via.placeholder.com/100x20" width="100" height="20" alt="Погнали лого">
       </a>
-      <div class="header__menu">
-        <ul class="list-style-reset header__link-list link-list">
-          <li class="link-list__item">
+      <nav class="header__menu">
+        <ul class="list-style-reset header__main-nav main-nav">
+          <li class="main-nav__item">
             <a href="#">О сервисе</a>
           </li>
-          <li class="link-list__item">
+          <li class="main-nav__item">
             <a href="form.html">Направления</a>
           </li>
-          <li class="link-list__item">
+          <li class="main-nav__item">
             <a href="catalog.html">Попутчики</a>
           </li>
         </ul>
@@ -45,7 +45,7 @@
             <a href="#">Instagram</a>
           </li>
         </ul>
-      </div>
+      </nav>
     </header>
 
     <main>
@@ -76,25 +76,17 @@
           <cite>Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
         </blockquote>
         <ul class="list-style-reset steps__list">
-          <li class="steps__item">
-            Выберите направление
-          </li>
-          <li class="steps__item">
-            Изучите идеи путешественников
-          </li>
-          <li class="steps__item">
-            Находите тех, кто похож на вас
-          </li>
-          <li class="steps__item">
-            Путешествуйте вместе!
-          </li>
+          <li class="steps__item">Выберите направление</li>
+          <li class="steps__item">Изучите идеи путешественников</li>
+          <li class="steps__item">Находите тех, кто похож на вас</li>
+          <li class="steps__item">Путешествуйте вместе!</li>
         </ul>
       </section>
 
       <section class="about">
         <h2 class="about__heading">О сервисе</h2>
         <p class="about__paragraph">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-        <p class="about__paragraph--bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+        <p class="about__paragraph about__paragraph--bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
       </section>
 
       <section class="directions">
@@ -123,14 +115,14 @@
       <section class="companions">
         <h2 class="companions__heading">Попутчики</h2>
         <p class="companions__paragraph">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-        <p class="companions__paragraph--bold">Теперь можно легко найти единомышленников!</p>
+        <p class="companions__paragraph companions__paragraph--bold">Теперь можно легко найти единомышленников!</p>
         <ul class="list-style-reset companions__list persons-list">
           <li class="persons-list__item person">
             <div class="person__info">
               <h3 class="person_name">Таня Фирсова</h3>
               <p class="person__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
               <ul class="list-style-reset person__transport transport">
-                <li class="transport__plane--active"></li>
+                <li class="transport__plane transport__plane--active"></li>
                 <li class="transport__bus"></li>
                 <li class="transport__bike"></li>
                 <li class="transport__walk"></li>
@@ -150,10 +142,10 @@
               <h3 class="person_name">Петя Демин</h3>
               <p class="person__tags">#бургер #бар #футбол #концерт #крафт</p>
               <ul class="person__transport transport">
-                <li class="transport__plane--active"></li>
-                <li class="transport__bus--active"></li>
+                <li class="transport__plane transport__plane--active"></li>
+                <li class="transport__bus transport__bus--active"></li>
                 <li class="transport__bike"></li>
-                <li class="transport__walk--active"></li>
+                <li class="transport__walk transport__walk--active"></li>
               </ul>
               <ul class="list-style-reset person__flags flags-list">
                 <li class="flags-list__item"></li>
@@ -210,7 +202,7 @@
             <a href="#">mail@htmlacademy.ru</a>
           </li>
         </ul>
-        <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
+        <address class="contacts__address">ул. Большая Конюшенная, 19/8</address>
         <a class="contacts__route" href="#">Проложить маршрут</a>
         <img src="https://via.placeholder.com/320x320" width="320" height="320" alt="Карта">
       </section>
