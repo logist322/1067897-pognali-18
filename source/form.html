@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <a class="header__logo" href="index.html">
+      <img src="https://via.placeholder.com/100x20" width="100" height="20" alt="Погнали лого">
+    </a>
+    <div class="header__menu">
+      <ul class="list-style-reset header__link-list link-list">
+        <li class="link-list__item">
+          <a href="#">О сервисе</a>
+        </li>
+        <li class="link-list__item">
+          <a href="#">Направления</a>
+        </li>
+        <li class="link-list__item">
+          <a href="catalog.html">Попутчики</a>
+        </li>
+      </ul>
+      <ul class="list-style-reset header__login login">
+        <li class="login__item">
+          <a href="#">Авторизация</a>
+        </li>
+      </ul>
+      <ul class="list-style-reset header__contact-link contact-link">
+        <li class="contact-link__item">
+          <a href="tel:88005558628">8 800 555-86-28</a>
+        </li>
+        <li class="contact-link__item">
+          <a href="#">mail@htmlacademy.ru</a>
+        </li>
+      </ul>
+      <ul class="list-style-reset header__socials socials">
+        <li class="socials__item">
+          <a href="#">Facebook</a>
+        </li>
+        <li class="socials__item">
+          <a href="#">Вконтакте</a>
+        </li>
+        <li class="socials__item">
+          <a href="#">Instagram</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="page">
+    <h1 class="page__title">Направления</h1>
+
+    <section class="profile">
+      <h2 class="profile__title">Профиль</h2>
+      <div class="profile__level">
+        <p class="profile__level-count">80</p>
+        <span class="profile__level-name">level</span>
+      </div>
+      <div class="profile__avatar">
+        <img src="https://via.placeholder.com/100x100" width="100" height="100" alt="Фото">
+      </div>
+      <button class="profile__change">Сменить фото</button>
+      <div class="profile__tags-wrap">
+        <h3 class="profile__tags-title">Тэги</h3>
+        <p class="profile__tags">#бургер #бар #футбол #концерт #крафт</p>
+      </div>
+      <h3 class="profile__transport-title">Транспорт</h3>
+      <ul class="profile__transport transport">
+        <li class="transport__plane transport__plane--active"></li>
+        <li class="transport__bus transport__bus--active"></li>
+        <li class="transport__bike"></li>
+        <li class="transport__walk transport__walk--active"></li>
+      </ul>
+    </section>
+
+    <section class="plan">
+      <h2 class="plan__title">Мои планы:</h2>
+      <ul class="list-style-reset plan__list">
+        <li class="plan__item planing-card">
+          <h3 class="card__heading">Франция, Италия</h3>
+          <p class="card__companions">3 попутчика</p>
+          <p class="card__date">26 мар — 29 мар</p>
+          <a class="card__change" href="#">Изменить</a>
+        </li>
+        <li class="plan__item planing-card">
+          <h3 class="card__heading">Таиланд, Индонезия</h3>
+          <p class="card__companions">1 попутчика</p>
+          <p class="card__date">1 июл — 15 июл</p>
+          <a class="card__change" href="#">Изменить</a>
+        </li>
+      </ul>
+    </section>
+
+    <form class="add-plan" action="https://echo.htmlacademy.ru" method="GET">
+      <h2 class="add-plan__title">Добавить план:</h2>
+      <section class="add-plan__date step">
+        <h3 class="step__title">Шаг 1. Даты пребывания</h3>
+        <p class="step__subtitle">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее  предполагаемую длительность.</p>
+        <label class="step__label" for="companions">
+          <span class="step__main-label">Ищу попутчиков:</span>
+          <span class="step__grey-label">Чел.</span>
+        </label>
+        <input class="step__input" type="text" name="companions" id="companions">
+        <label class="step__label" for="duration">
+          <span class="step__main-label">Длительность:</span>
+          <span class="step__grey-label">Дн.</span>
+        </label>
+        <input class="step__input" type="text" name="duration" id="duration">
+        <div class="step__check-wrap">
+          <input class="step__kids-check" type="checkbox" name="kids" id="kids">
+          <label class="step__check-label" for="kids">Можно с детьми</label>
+        </div>
+        <div class="step__celcendar">
+
+        </div>
+        <button class="step__next" type="button">Следующий шаг</button>
+      </section>
+
+      <section class="add-plan__route step">
+        <h3 class="step__title">Шаг 2. Маршрут</h3>
+        <p class="step__subtitle">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
+        <select name="country">
+          <option value="Босния и Герцеговина">Босния и Герцеговина</option>
+          <option value="Чехия">Чехия</option>
+        </select>
+        <button class="step__add" type="button">Добавить страну</button>
+        <button class="step__next" type="button">Следующий шаг</button>
+        <button class="step__prev" type="button">На шаг назад</button>
+      </section>
+
+      <section class="add-plan__entertainment step">
+        <h3 class="step__title">Шаг 3. Развлечения</h3>
+        <p class="step__subtitle">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+        <label class="step__plan-label" for="bosnia_plan">Босния и Герцеговина</label>
+        <textarea class="step__plan-text" name="bosnia_plan" id="bosnia_plan" placeholder="План действий"></textarea>
+        <label class="step__plan-label" for="czech_plan">Чехия</label>
+        <textarea class="step__plan-text" name="chehia_plan" id="czech_plan" placeholder="План действий"></textarea>
+        <button class="step__send" type="submit">Отправить</button>
+        <button class="step__prev" type="button">На шаг назад</button>
+      </section>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <a class="footer__logo-link" href="index.html">
+      <img src="https://via.placeholder.com/96x15" width="96" height="15" alt="Лого Погнали">
+    </a>
+    <ul class="list-style-reset footer__socials socials">
+      <li class="socials__item">
+        <a href="#">Facebook</a>
+      </li>
+      <li class="socials__item">
+        <a href="#">Вконтакте</a>
+      </li>
+      <li class="socials__item">
+        <a href="#">Instagram</a>
+      </li>
+    </ul>
+    <span class="footer__developed">Разработано</span>
+    <a href="https://htmlacademy.ru/intensive/adaptive">
+      <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML Academy">
+    </a>
+  </footer>
+</body>
+</html>
