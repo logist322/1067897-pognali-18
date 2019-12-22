@@ -1,7 +1,7 @@
 .greating {
   background-image:
-    url(../../img/traveller-illustration-mobile@1x.png),
-    url(../../img/globe-back-mobile@1x.jpg);
+    url("../../img/traveller-illustration-mobile@1x.png"),
+    url("../../img/globe-back-mobile@1x.jpg");
   background-size: 60%, 100%;
   background-repeat: no-repeat, no-repeat;
   background-position: 55% 100%, 50% 100%;
@@ -17,7 +17,7 @@
   width: 240px;
   text-align: center;
   font-family: $bold;
-  color: #fff;
+  color: #ffffff;
   font-size: 36px;
   line-height: 1.11;
 }
@@ -37,7 +37,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #ff8d30 url(../../img/topmenu-phone.svg) 50% 50% no-repeat;
+  background: #ff8d30 url("../../img/topmenu-phone.svg") 50% 50% no-repeat;
   background-size: 18px 18px;
 }
 
@@ -46,7 +46,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #ffbd30 url(../../img/topmenu-mail.svg) 50% 50% no-repeat;
+  background: #ffbd30 url("../../img/topmenu-mail.svg") 50% 50% no-repeat;
   background-size: 18px 14px;
 }
 

@@ -15,20 +15,15 @@
   display: inline-block;
   font-family: $medium;
   font-size: 20px;
-  color: #fff;
-}
-
-//////Анимация
-.main-nav__item a {
+  color: #ffffff;
   overflow: hidden;
   height: 1em;
 }
 
+//////Анимация
 .main-nav__item a span {
   position: relative;
   display: inline-block;
-  -webkit-transition: -webkit-transform 0.3s;
-  -moz-transition: -moz-transform 0.3s;
   transition: transform 0.3s;
 }
 
@@ -37,15 +32,11 @@
   top: 100%;
   content: attr(data-hover);
   font-weight: 700;
-  -webkit-transform: translate3d(0,0,0);
-  -moz-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+  transform: translate3d(0, 0, 0);
 }
 
 .main-nav__item a:hover span,
 .main-nav__item a:focus span {
   color: #ffd74b;
-  -webkit-transform: translateY(-100%);
-  -moz-transform: translateY(-100%);
   transform: translateY(-100%);
 }
