@@ -20,32 +20,32 @@
 
 //////Анимация
 .main-nav__item a {
-	overflow: hidden;
-	height: 1em;
+  overflow: hidden;
+  height: 1em;
 }
 
 .main-nav__item a span {
-	position: relative;
-	display: inline-block;
-	-webkit-transition: -webkit-transform 0.3s;
-	-moz-transition: -moz-transform 0.3s;
+  position: relative;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
   transition: transform 0.3s;
 }
 
 .main-nav__item a span::before {
-	position: absolute;
-	top: 100%;
-	content: attr(data-hover);
+  position: absolute;
+  top: 100%;
+  content: attr(data-hover);
   font-weight: 700;
-	-webkit-transform: translate3d(0,0,0);
-	-moz-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 .main-nav__item a:hover span,
 .main-nav__item a:focus span {
   color: #ffd74b;
-	-webkit-transform: translateY(-100%);
-	-moz-transform: translateY(-100%);
-	transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  transform: translateY(-100%);
 }
