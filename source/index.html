@@ -2,71 +2,79 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
-      <a class="header__logo" href="index.html">
-        <img src="https://via.placeholder.com/100x20" width="100" height="20" alt="Погнали лого">
-      </a>
-      <nav class="header__menu">
-        <ul class="list-style-reset header__main-nav main-nav">
-          <li class="main-nav__item">
-            <a href="#">О сервисе</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">Направления</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">Попутчики</a>
-          </li>
-        </ul>
-        <ul class="list-style-reset header__login login">
-          <li class="login__item">
-            <a href="#">Авторизация</a>
-          </li>
-        </ul>
-        <ul class="list-style-reset header__contact-link contact-link">
-          <li class="contact-link__item">
-            <a href="tel:88005558628">8 800 555-86-28</a>
-          </li>
-          <li class="contact-link__item">
-            <a href="#">mail@htmlacademy.ru</a>
-          </li>
-        </ul>
-        <ul class="list-style-reset header__socials socials">
-          <li class="socials__item">
-            <a href="#">Facebook</a>
-          </li>
-          <li class="socials__item">
-            <a href="#">Вконтакте</a>
-          </li>
-          <li class="socials__item">
-            <a href="#">Instagram</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header__wrap">
+        <div class="header__img-wrap">
+          <a class="header__logo" href="index.html">
+            <img src="https://via.placeholder.com/100x20" width="100" height="20"alt="Погнали лого">
+          </a>
+        </div>
+        <img class="header__burger" src="img/menu.svg" width="25" height="11">
+        <nav class="header__nav nav">
+          <ul class="list-style-reset nav__main-nav main-nav">
+            <li class="main-nav__item">
+              <a href="#">
+                <span data-hover="О сервисе">О сервисе</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">
+                <span  data-hover="Направления">Направления</span>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">
+                <span data-hover="Попутчики">Попутчики</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="list-style-reset nav__contact-link contact-link">
+            <li class="contact-link__item">
+              <a class="contact-link__phone" href="tel:88005558628">
+                <span class="visually-hidden">8 800 555-86-28</span>
+              </a>
+            </li>
+            <li class="contact-link__item">
+              <a class="contact-link__mail" href="mailto:mail@htmlacademy.ru">
+                <span class="visually-hidden">mail@htmlacademy.ru</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="list-style-reset nav__user user">
+            <li class="user__item">
+              <a class="user__authorization" href="#">Авторизация</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
       <h1 class="visually-hidden">Погнали?</h1>
       <section class="greating">
-        <p class="greating__slogan">В путешествие с крутыми попутчиками!</p>
-        <ul class="list-style-reset greating__button-list">
-          <li class="greating__button-item">
-            <a class="greating__phone" href="tel:">
-              <span class="visually-hidden">Телефон</span>
-            </a>
-          </li>
-          <li class="greating__button-item">
-              <a class="greating__message" href="#">
-                <span class="visually-hidden">Написать нам</span>
+        <div class="greating__wrap">
+          <p class="greating__slogan">В путешествие с крутыми попутчиками!</p>
+          <ul class="list-style-reset greating__button-list">
+            <li class="greating__button-item">
+              <a class="greating__phone" href="tel:88005558628">
+                <span class="visually-hidden">Телефон</span>
               </a>
-          </li>
-          <li class="greating__button-item">
-            <a class="greating__login" href="#">Авторизация</a>
-          </li>
-        </ul>
+            </li>
+            <li class="greating__button-item">
+                <a class="greating__message" href="mailto:mail@htmlacademy.ru">
+                  <span class="visually-hidden">Написать нам</span>
+                </a>
+            </li>
+            <li class="greating__button-item">
+              <a class="greating__login" href="#">Авторизация</a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="steps">
@@ -228,5 +236,43 @@
         <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML Academy">
       </a>
     </footer>
+
+    <!-- <div class="popup__menu">
+          <ul class="list-style-reset header__main-nav main-nav">
+            <li class="main-nav__item">
+              <a href="#">О сервисе</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Направления</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+          <ul class="list-style-reset header__login login">
+            <li class="login__item">
+              <a href="#">Авторизация</a>
+            </li>
+          </ul>
+          <ul class="list-style-reset header__contact-link contact-link">
+            <li class="contact-link__item">
+              <a href="tel:88005558628">8 800 555-86-28</a>
+            </li>
+            <li class="contact-link__item">
+              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+          </ul>
+          <ul class="list-style-reset header__socials socials">
+            <li class="socials__item">
+              <a href="#">Facebook</a>
+            </li>
+            <li class="socials__item">
+              <a href="#">Вконтакте</a>
+            </li>
+            <li class="socials__item">
+              <a href="#">Instagram</a>
+            </li>
+          </ul>
+        </div> -->
   </body>
 </html>
