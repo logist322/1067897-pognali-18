@@ -1,0 +1,42 @@
+.main-nav {
+  display: none;
+
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.main-nav__item {
+  margin-right: 37px;
+}
+
+.main-nav__item a {
+  display: inline-block;
+  font-family: $medium;
+  font-size: 20px;
+  color: #ffffff;
+  overflow: hidden;
+  height: 1em;
+}
+
+//////Анимация
+.main-nav__item a span {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.main-nav__item a span::before {
+  position: absolute;
+  top: 100%;
+  content: attr(data-hover);
+  font-weight: 700;
+  transform: translate3d(0, 0, 0);
+}
+
+.main-nav__item a:hover span,
+.main-nav__item a:focus span {
+  color: #ffd74b;
+  transform: translateY(-100%);
+}

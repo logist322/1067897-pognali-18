@@ -1,0 +1,49 @@
+.header {
+  background-color: #161c36;
+  padding-top: 27px;
+
+  @include tablet {
+    background-color: #182044;
+    padding-top: 40px;
+  }
+}
+
+.header__wrap {
+  box-sizing: border-box;
+  width: 84.375%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include tablet {
+    width: 89.583333%;
+  }
+
+  @include desktop {
+    width: 91.66%;
+  }
+}
+
+.header__img-wrap {
+  @include tablet {
+    width: 188px;
+  }
+
+  @include desktop {
+    width: auto;
+  }
+}
+
+.header__burger {
+  @include desktop {
+    display: none;
+  }
+}
+
+.header__nav {
+  @include desktop {
+    margin-left: 145px;
+    flex-grow: 1;
+  }
+}
